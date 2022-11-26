@@ -1,0 +1,22 @@
+.dot {
+    width: 500px;
+    height: 500px;
+
+    background: #FBEEDB;
+
+    border: 2px solid transparent; 
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%; 
+    background: linear-gradient(0deg,#805931,#B07D48) border-box; 
+
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) padding-box, 
+       linear-gradient(#fff 0 0);
+       mask: unset;
+
+    -webkit-mask-composite: xor; 
+            mask-composite: exclude; 
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
