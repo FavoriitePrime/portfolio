@@ -1,0 +1,23 @@
+div.dot {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: yellow;
+    background: -webkit-linear-gradient(#B07D48, #805931);
+    background: -o-linear-gradient(#B07D48, #805931);
+    background: -moz-linear-gradient(#B07D48, #805931);
+    background: linear-gradient(#B07D48, #805931);
+}
+
+div.Image {
+    width: 99%;
+    height: 99%;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url(/src/Images/Cat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 60px;
+}
