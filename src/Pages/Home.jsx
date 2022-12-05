@@ -1,11 +1,12 @@
 import React from "react";
+import './Styles/Default.css'
 
 const Home = function () {
     return (
         <>
-            <div>
-                Home sweat home
-            </div>
+            <main className="Page">
+              dfs
+            </main>
         </>
     )
 }

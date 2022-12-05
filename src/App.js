@@ -2,27 +2,21 @@ import React from "react";
 
 import { CircleImage } from './Components/CircleImage.jsx'
 import { Home } from './Pages/Home.jsx'
+import Navbar from "./Components/Navigation/Navbar.jsx";
 
-import './Components/Styles/Header.css'
+
 import './Components/Styles/Main.css'
 
 import {
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 export default function App() {
   return (
     <main>
-      <header className="background">
-        <div className="rings">fds</div>
-          <nav className="navigation">
-            <div className="bookmark"><Link to="/">Home</Link></div>
-            <div className="bookmark"><Link to="/about">About</Link></div>
-            <div className="bookmark"><Link to="/users">Users</Link></div>
-          </nav>
-      </header>
+      <Navbar>
+      </Navbar>
       <Routes>
         <Route path="/about" element={<CircleImage />}>
         </Route>
