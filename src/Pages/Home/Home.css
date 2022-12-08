@@ -1,0 +1,10 @@
+.wraper{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+CircleImage{
+    width: 600px;
+    height: 600px;
+}

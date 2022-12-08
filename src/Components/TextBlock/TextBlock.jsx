@@ -1,5 +1,5 @@
 import React from "react";
-import './Styles/TextBlock.css'
+import './TextBlock.css'
 const TextBlock = function ({Header, Text}) {
     Header = Header.slice(0, 16)
     return(

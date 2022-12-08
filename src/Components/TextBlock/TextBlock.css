@@ -1,8 +1,8 @@
 .underline {
     display: block;
     resize: none;
-    height: 689px;
-    width: 530px;
+    height: 100%;
+    width: 50%;
 
     color: black;
     line-height: 50px;
@@ -34,4 +34,5 @@
 }
 .Content{
     font-size: 30px;
+    white-space: pre-line
 }

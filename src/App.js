@@ -1,11 +1,10 @@
 import React from "react";
 
-import { CircleImage } from './Components/CircleImage.jsx'
-import { Home } from './Pages/Home.jsx'
+import { Home } from './Pages/Home/Home.jsx'
+
 import Navbar from "./Components/Navigation/Navbar.jsx";
 
-
-import './Components/Styles/Main.css'
+import './App.css'
 
 import {
   Routes,
@@ -18,7 +17,7 @@ export default function App() {
       <Navbar>
       </Navbar>
       <Routes>
-        <Route path="/about" element={<CircleImage />}>
+        <Route path="/about">
         </Route>
         <Route path="/users">
         </Route>
