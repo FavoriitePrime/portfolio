@@ -15,7 +15,8 @@ export default function App() {
   const pages = [
     { name: 'Главная', Element: '<Home/>', url: '' },
     { name: 'Обо мне', Element: '', url: '/aboutMe' },
-    { name: 'Что то' , Element: '' , url: '' }
+    { name: 'Моё \n образование' , Element: '' , url: '' },
+    { name: 'что то' , Element: '' , url: '' },
   ];
 
   return (

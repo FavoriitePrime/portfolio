@@ -16,7 +16,6 @@ div.Image {
     height: 99%;
     border-radius: 50%;
     display: inline-block;
-    background-image: url(/src/Images/Cat.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 60px;

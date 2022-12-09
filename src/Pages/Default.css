@@ -1,8 +1,15 @@
-.Page{
+.Page {
     padding-top: 135px;
     height: 100vh;
+}
 
-    /* background-color: #F9E9C7;
-    background-image: url(/src/Images/Background.png);
-    background-blend-mode: overlay; */
+.BottomUnderLine {
+    margin: auto;
+    margin-top: 2%;
+    border: none;
+    border-top: 5px dashed black;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 75%;
 }

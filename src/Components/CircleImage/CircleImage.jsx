@@ -2,13 +2,16 @@ import React from "react";
 import './CircleImage.css'
 
 const CircleImage = function ({ Url }) {
+    const style = {
+        backgroundImage: `url(${Url})`
+    }
     return (
         <>
-            <div src={Url} alt="None" className="dot">
-                <div className="Image"></div>
+            <div alt="None" className="dot">
+                <div style={style} className="Image"></div>
             </div>
         </>
     )
 }
 
-export { CircleImage };
+export default CircleImage ;

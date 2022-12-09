@@ -2,10 +2,12 @@ import React from "react";
 
 import TextBlock from "../../Components/TextBlock/TextBlock";
 import TagElement from "../../Components/TagElement/TagElement";
-import List from "../../Components/List/List.jsx";
+
+import image from '../../Images/Cat.png'
 
 import '../Default.css'
 import './Home.css'
+import CircleImage from "../../Components/CircleImage/CircleImage";
 
 const Home = function ({ pages }) {
     return (
@@ -13,6 +15,7 @@ const Home = function ({ pages }) {
             <main className="Page">
                 <TagElement Text={'Главная'} />
                 <div className="wraper">
+                    <CircleImage Url={image}/>
                     <TextBlock
                         Header={'Здравствуйте'}
                         Text=
@@ -23,8 +26,8 @@ const Home = function ({ pages }) {
                         }
                         Width='800px'
                     />
-                    <List pages={pages} Width="525px" />
                 </div>
+                <hr className="BottomUnderLine"/>
             </main>
         </>
     )
