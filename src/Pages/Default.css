@@ -1,8 +1,8 @@
 .Page{
-    padding-top: 15vh;
-    height: 75%;
-}
+    padding-top: 135px;
+    height: 100vh;
 
-CircleImage{
-    width: 100%;
+    /* background-color: #F9E9C7;
+    background-image: url(/src/Images/Background.png);
+    background-blend-mode: overlay; */
 }

@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 import './Styles/Navbar.css'
 
-export default function Navbar() {
+export default function Navbar(pages) {
+    const elements = pages.pages.map((pages) =>
+        <Link to={pages.url}>
+        {pages.name}
+        </Link>
+    );
     const [menuActive, setMenuActive] = useState(false)
     return (
         <>
@@ -12,9 +17,7 @@ export default function Navbar() {
                 <div className="rings" />
                 <div className={menuActive ? 'menu active' : 'menu'}>
                     <div className='header'>
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/users">Users</Link>
+                        {elements}
                     </div>
                     <button className="burger-btn"
                         onClick={() => setMenuActive(!menuActive)}>
