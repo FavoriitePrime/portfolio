@@ -1,0 +1,19 @@
+.goBackBtn{
+    border: none;
+    background: url(/src/Images/List_element.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: 36px;
+    line-height: 80px;
+    width: 400px;
+    height: fit-content;
+    margin-left: 1%;
+    transition: all 0.5s;
+}
+
+.goBackBtn:hover{
+    color: white;
+}

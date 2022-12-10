@@ -1,5 +1,5 @@
 import React from "react";
-import './CircleImage.css'
+import './Image.css'
 
 const CircleImage = function ({ Url , size}) {
     const style = {

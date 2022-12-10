@@ -1,26 +1,25 @@
 import React from "react";
 
-import TagElement from "../../Components/TagElement/TagElement";
-import List from "../../Components/List/List.jsx"
+import { Main } from "./Pages/Main/Main.jsx";
+import { Unity } from "./Pages/Unity/Unity";
+import { ReactP } from "./Pages/React/React";
+ 
+import {
+    Routes,
+    Route,
+} from "react-router-dom";
+import { Blender } from "./Pages/Blender/Blender.jsx";
 
-import '../Default.css'
-import './Projects.css'
-
-const Projects = function ({ pages }) {
-    const list = [
-        { name: 'Unity', Element: '<Unity/>', url: '/Unity' },
-        { name: 'Blender', Element: '<Blender/>', url: '/Blender' },
-        { name: 'React', Element: '<React/>', url: '/React' },
-    ]
-
+const Projects = function () {
     return (
         <>
-            <main className="Page">
-                <TagElement Text={'Мои проекты'} />
-                <div className="wraper">
-                    <List list={list} Width="525px" Height="600px"/>
-                </div>
-                <hr className="BottomUnderLine"/>
+            <main>
+                    <Routes>
+                        <Route exact path="/" element={<Main />} />
+                        <Route exact path="/Unity" element={(<Unity />)} />
+                        <Route exact path="/React" element={(<ReactP />)} />
+                        <Route exact path="/Blender" element={(<Blender />)} />
+                    </Routes>
             </main>
         </>
     )

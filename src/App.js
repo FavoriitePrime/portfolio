@@ -28,7 +28,7 @@ export default function App() {
       </Navbar>
       <Routes>
       <Route path="/Contact" element={<Contact/>}/>
-        <Route path="/Projects" element={<Projects/>}/>
+        <Route path="/Projects/*" element={<Projects/>}/>
         <Route path="/Education" element={<Education/>}/>
         <Route exact path="" element={<Home pages={pages} />}/>
       </Routes>

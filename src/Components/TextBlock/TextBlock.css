@@ -1,4 +1,5 @@
 .underline {
+    align-self: center;
     display: block;
     resize: none;
 
@@ -33,4 +34,10 @@
 .Content{
     font-size: 30px;
     white-space: pre-line
+}
+
+.Contacts a{
+    text-align: left;
+    color:black;
+    text-decoration: underline blue;
 }
