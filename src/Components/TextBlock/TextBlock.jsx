@@ -1,10 +1,11 @@
 import React from "react";
 import './TextBlock.css'
-const TextBlock = function ({Header, Text, Width }) {
+const TextBlock = function ({Header, Text, Width, Height }) {
     Header = Header.slice(0, 16)
 
     const style = {
-        width: Width
+        width: Width,
+        height: Height
     }
     return(
         <>  

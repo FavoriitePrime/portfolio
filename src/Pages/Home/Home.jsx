@@ -2,12 +2,12 @@ import React from "react";
 
 import TextBlock from "../../Components/TextBlock/TextBlock";
 import TagElement from "../../Components/TagElement/TagElement";
+import CircleImage from "../../Components/CircleImage/CircleImage";
 
 import image from '../../Images/Cat.png'
 
 import '../Default.css'
 import './Home.css'
-import CircleImage from "../../Components/CircleImage/CircleImage";
 
 const Home = function ({ pages }) {
     return (
@@ -15,19 +15,20 @@ const Home = function ({ pages }) {
             <main className="Page">
                 <TagElement Text={'Главная'} />
                 <div className="wraper">
-                    <CircleImage Url={image}/>
+                    <CircleImage Url={image} size="500px" />
                     <TextBlock
                         Header={'Здравствуйте'}
                         Text=
                         {
                             "Я Максим Попов мне 19 лет\n" +
                             "и бла бла бла \n" +
-                            "Какая то строка\n\n\n\n\n\n\n\n\n"
+                            "Какая то строка\n\n"
                         }
-                        Width='800px'
+                        Width='500px'
+                        Height='500px'
                     />
                 </div>
-                <hr className="BottomUnderLine"/>
+                <hr className="BottomUnderLine" />
             </main>
         </>
     )

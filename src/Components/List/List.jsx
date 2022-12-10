@@ -2,22 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './List.css'
 
-const List = function ({ pages, Width}) {
-    const elements = pages.map((pages) =>
-        <li className="list_Elements">
-            <Link className="list_Elements" to={pages.url}>{pages.name}</Link>
-        </li>
+const List = function ({ list, Width, Height}) {
+    console.log(list)
+    const elements = list.map((list) =>
+        <div className="list_Elements">
+            <Link className="list_Elements" to={list.url}>{list.name}</Link>
+        </div>
     );
 
     const Style = {
-        width: Width
+        width: Width,
+        height: Height,
+        backgroundSize: Width,Height
       };
 
     return (
         <>
-            <ul className="list" style={Style}>
+            <div className="list" style={Style}>
                 {elements}
-            </ul>
+            </div>
         </>
     )
 }

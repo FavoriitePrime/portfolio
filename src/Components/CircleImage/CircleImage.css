@@ -1,6 +1,5 @@
 div.dot {
-    width: 600px;
-    height: 600px;
+    align-self: center;
     padding: 10px;
     border-radius: 50%;
     display: inline-block;
@@ -12,8 +11,8 @@ div.dot {
 }
 
 div.Image {
-    width: 99%;
     height: 99%;
+    width: 99%;
     border-radius: 50%;
     display: inline-block;
     background-size: contain;
